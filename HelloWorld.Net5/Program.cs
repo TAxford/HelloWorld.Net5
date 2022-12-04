@@ -19,7 +19,18 @@ namespace HelloWorld.Net5
             Console.WriteLine("Hello World!");
             Console.WriteLine("Hello Tim!");
 
+
+            double myDouble = 13.37;
+            int myInt;
+
+            // cast double to int;
+            myInt = (int)myDouble;
+            Console.WriteLine(myInt);
+
             Console.Read();
+
+
+
             
         }
     }
