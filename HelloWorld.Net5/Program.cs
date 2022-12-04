@@ -7,7 +7,9 @@ namespace HelloWorld.Net5
         // starting point of our program
         static void Main(string[] args)
         {
-            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.ForegroundColor = ConsoleColor.Gray;
+            Console.BackgroundColor = ConsoleColor.Red;
+            Console.Clear();
             Console.WriteLine("Hello World!");
             Console.WriteLine("Hello Tim!");
 
