@@ -49,16 +49,14 @@ namespace HelloWorld.Net5
             Console.WriteLine(result);
 
 
+            int age = 31;
+            string name = "Alfonso";
 
 
-
-
-
-            Console.Read();
-
-
-
-            
+            // 1. string concantenation
+            Console.WriteLine("String Concantination");
+            Console.WriteLine("Hello my name is " + name + " , I am " + age + " years old");
+            Console.Read();            
         }
     }
 }
