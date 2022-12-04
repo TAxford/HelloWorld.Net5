@@ -56,6 +56,15 @@ namespace HelloWorld.Net5
             // 1. string concantenation
             Console.WriteLine("String Concantination");
             Console.WriteLine("Hello my name is " + name + " , I am " + age + " years old");
+
+
+            //2. String formatting.
+            //string formatting uses index
+            Console.WriteLine("String Formatting");
+            Console.WriteLine("Hello my name is {0} , I am {1} years old", name, age);
+
+
+
             Console.Read();            
         }
     }
