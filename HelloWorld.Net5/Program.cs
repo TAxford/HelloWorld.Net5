@@ -1,13 +1,22 @@
 ﻿using System;
+using System.Reflection.Metadata;
 
 namespace HelloWorld.Net5
 {
     // Class names like ClientActivity
+
+    // Constants are immutable values which are known
+    // at compile time and do not change for the life of the program
     internal class Program
     {
         // starting point of our program
         // Method name like CalculateValue
         // method arguments like firstNumber
+
+        // constants as fields
+        const double PI = 3.314159265359;
+        const int weeks = 52, months = 12;
+        const string birthdate = "11.22.1985";
         static void Main(string[] args)
         {
             //changes text color
@@ -75,11 +84,17 @@ namespace HelloWorld.Net5
             //verbatim strings start with @ and tells the compiler to take the string
             //literally and ignore any spaces and escape characters like \n
             Console.WriteLine("Verbatim strings");
+            //added space to show the example properly
             Console.WriteLine(@"Lorem ipsum dolor 
-
+            
 
              sit amet");
 
+
+            //const examples
+
+            Console.WriteLine(birthdate);
+            
 
             Console.Read();            
         }
