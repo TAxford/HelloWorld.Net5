@@ -51,18 +51,25 @@ namespace HelloWorld.Net5
 
             int age = 31;
             string name = "Alfonso";
+            string eat = "Pizza";
 
 
             // 1. string concantenation
             Console.WriteLine("String Concantination");
-            Console.WriteLine("Hello my name is " + name + " , I am " + age + " years old");
+            Console.WriteLine("Hello my name is " + name + " , I am " + age + " years old." + " I eat " + eat);
 
 
             //2. String formatting.
             //string formatting uses index
             Console.WriteLine("String Formatting");
-            Console.WriteLine("Hello my name is {0} , I am {1} years old", name, age);
+            Console.WriteLine("Hello my name is {0} , I am {1} years old. I eat {2}", name, age, eat);
 
+
+            //3. String interpolation
+            //string interpolation uses $ at the start which will allow us to write our
+            //variables like this {variableName}
+            Console.WriteLine("String Interpolation");
+            Console.WriteLine($"Hello my name is {name} , I am {age} years old", name, age);   
 
 
             Console.Read();            
