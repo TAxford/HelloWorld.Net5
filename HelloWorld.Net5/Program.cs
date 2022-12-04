@@ -39,6 +39,21 @@ namespace HelloWorld.Net5
 
             Console.WriteLine(myInt);
 
+            string myParseString = "15";
+            string myParseStringSecond = "13";
+            // parsing string into an int
+            int num1 = Int32.Parse(myParseString);
+            int num2 = Int32.Parse(myParseStringSecond);
+            int result = num1 + num2;
+
+            Console.WriteLine(result);
+
+
+
+
+
+
+
             Console.Read();
 
 
