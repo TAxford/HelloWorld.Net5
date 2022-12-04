@@ -69,7 +69,16 @@ namespace HelloWorld.Net5
             //string interpolation uses $ at the start which will allow us to write our
             //variables like this {variableName}
             Console.WriteLine("String Interpolation");
-            Console.WriteLine($"Hello my name is {name} , I am {age} years old", name, age);   
+            Console.WriteLine($"Hello my name is {name} , I am {age} years old.");   
+
+            //4. Verbatim strings.
+            //verbatim strings start with @ and tells the compiler to take the string
+            //literally and ignore any spaces and escape characters like \n
+            Console.WriteLine("Verbatim strings");
+            Console.WriteLine(@"Lorem ipsum dolor 
+
+
+             sit amet");
 
 
             Console.Read();            
